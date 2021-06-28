@@ -61,7 +61,7 @@ kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
 
-1. Get the external IP address of the Service:
+2. Get the external IP address of the Service:
 
 ```sh
 kubectl get services
