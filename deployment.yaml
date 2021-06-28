@@ -15,7 +15,9 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: gcr.io/plasma-kit-318105/helloworld-gke:latest
+        # Replace $GCLOUD_PROJECT with your project ID.
+        # You can get project ID by runnning `gcloud config get-value project`.
+        image: gcr.io/$GCLOUD_PROJECT/helloworld-gke:latest
         # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8080
